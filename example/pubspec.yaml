@@ -6,7 +6,7 @@ description: Demonstrates how to use the quick_usb plugin.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: ^3.5.1
 
 dependencies:
   flutter:
@@ -19,7 +19,7 @@ dependencies:
     # The example app is bundled with the plugin so we use a path dependency on
     # the parent directory to use the current plugin's version.
     path: ../
-  convert: ^2.1.1
+  convert: ^3.1.1
 
 dev_dependencies:
   flutter_test:

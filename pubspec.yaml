@@ -4,8 +4,8 @@ version: 0.3.1
 homepage: https://github.com/woodemi/quick_usb
 
 environment:
-  sdk: ">=2.13.0 <3.0.0"
-  flutter: ">=2.2.0"
+  sdk: ^3.5.1
+  flutter: '>=3.3.0'
 
 dependencies:
   flutter:
@@ -17,6 +17,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_lints: ^4.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
