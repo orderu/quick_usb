@@ -39,12 +39,8 @@ class QuickUsb {
 
   static Future<List<UsbDevice>> getDeviceList() => _platform.getDeviceList();
 
-  /// [requestPermission] If true, Android will ask permission for each USB
-  /// device if required. Only required to retrieve the serial number.
-  static Future<List<UsbDeviceDescription>> getDevicesWithDescription({
-    bool requestPermission = true,
-  }) =>
-      _platform.getDevicesWithDescription(requestPermission: requestPermission);
+  static Future<List<UsbDeviceDescription>> getDevicesWithDescription() =>
+      _platform.getDevicesWithDescription();
 
   /// [requestPermission] If true, Android will ask permission for the USB device
   /// if required. Only required to retrieve the serial number.

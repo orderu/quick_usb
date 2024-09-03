@@ -83,9 +83,7 @@ class _QuickUsbDesktop extends QuickUsbPlatform {
   }
 
   @override
-  Future<List<UsbDeviceDescription>> getDevicesWithDescription({
-    bool requestPermission = true,
-  }) async {
+  Future<List<UsbDeviceDescription>> getDevicesWithDescription() async {
     var devices = await getDeviceList();
     var result = <UsbDeviceDescription>[];
     for (var device in devices) {
